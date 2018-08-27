@@ -1,4 +1,4 @@
-# pinentry-kphttp
+# pinentry-keepass
 
 A gnupg pinentry program, which automatically retrieves the key from KeePass/KeePassX/KeePassXC using the KeePassHTTP-Protocol.
 
@@ -11,9 +11,12 @@ A gnupg pinentry program, which automatically retrieves the key from KeePass/Kee
 
         https://gnupg.org
 
-  * Add pinentry-kphttp to /home/<youruser>/bin
+  * Add pinentry-kphttp to bin
+
+		chmod +x ./pinentry-keepass
+		sudo cp ./pinentry-keepass /usr/local/bin/pinentry-keepass
   * edit ~/.gnupg/gpg-agent.conf and add your path:
 
-        pinentry-program /home/<youruser>/bin/pinentry-gtk-2
+        pinentry-program /usr/local/bin/pinentry-keepass
 
 On first use KeePass will ask you to allow the application to access your passwords.
