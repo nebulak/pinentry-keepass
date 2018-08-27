@@ -7,11 +7,11 @@ A gnupg pinentry program, which automatically retrieves the key from KeePass/Kee
   * KeePassHTTP
 
 ## Setup
-  * Add the following URL to your Gnupg-password in keepass:
+  * Add the following URL to your gnupg-password in keepass:
 
         https://gnupg.org
 
-  * Add pinentry-kphttp to bin
+  * Add pinentry-keepass to bin
 
 		chmod +x ./pinentry-keepass
 		sudo cp ./pinentry-keepass /usr/local/bin/pinentry-keepass
